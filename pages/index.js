@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import { useQueryClient } from 'react-query';
+
 export default function Home() {
   const queryClient = useQueryClient();
+  console.log('🚀 ~ queryClient', queryClient);
   return (
     <div className={styles.container}>
       <Head>
